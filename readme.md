@@ -41,3 +41,4 @@ The `is-ci` package attempts to detect every CI service, which is unsustainable.
 ## Related
 
 - [is-inside-container](https://github.com/sindresorhus/is-inside-container) - Check if the process is running inside a container
+- [is-interactive](https://github.com/sindresorhus/is-interactive) - Check if stdout or stderr is interactive
