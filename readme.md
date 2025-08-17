@@ -18,7 +18,7 @@ if (isInCi) {
 }
 ```
 
-It looks for these environment variables: `CI`, `CONTINUOUS_INTEGRATION`, or any with a `CI_` prefix.
+It looks for these environment variables: `CI` and `CONTINUOUS_INTEGRATION`.
 
 ## CLI
 

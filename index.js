@@ -5,7 +5,6 @@ const isInCi = env.CI !== '0'
 	&& (
 		'CI' in env
 			|| 'CONTINUOUS_INTEGRATION' in env
-			|| Object.keys(env).some(key => key.startsWith('CI_'))
 	);
 
 export default isInCi;
