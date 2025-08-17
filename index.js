@@ -1,10 +1,7 @@
 import {env} from 'node:process';
 
-const isInCi = env.CI !== '0'
-	&& env.CI !== 'false'
-	&& (
-		'CI' in env
-			|| 'CONTINUOUS_INTEGRATION' in env
-	);
+const check = key => key in env && env[key] !== '0' && env[key] !== 'false';
+
+const isInCi = check('CI') || check('CONTINUOUS_INTEGRATION');
 
 export default isInCi;
